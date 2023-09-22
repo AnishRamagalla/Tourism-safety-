@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://t4.ftcdn.net/jpg/05/32/28/59/360_F_532285934_qyYCy5BpdBGaM1DpL1SvlcvftOMuppCC.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font: italic small-caps bold 36px/2 cursive;
+        
+        }
+        p{
+            font: italic small-caps bold 20px/2 cursive;
+        }
+        .bg_img img{
+            width: 600px;
+            height: 400px;
+            margin-left: 450px;
+            border: 5px solid black;
+        }
+        .graph{
+            margin-left: 400px;
+        }
+        .dot {
+            margin-left: 400px;
+  height: 15px;
+  width: 15px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot1 {
+    margin-left: 400px;
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot2 {
+    margin-left: 400px;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.d{
+    margin-left: 400px;
+}
+.map{
+    width: 600px;
+    height: 460px;
+    margin-left: 450px;
+    border: 5px solid red;
+}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <h1><u>FALAKNUMA PALACE</u></h1>
+    <div class="body">
+    <div class="bg_img">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/139528109.jpg?k=f28daddd35d132898ff46b627e1aa3fa115ed318d09fc3557166f40e0defbde7&o=&hp=1" alt="">
+    </div>
+    <p>Another gift of the Paigah family to the grand layout the city of Hyderabad, the Falaknuma Palace was built in 1893. This distinguished place was built in the shape of the scorpion with two stings spread out on either side that look quite like wings facing the north.</p>
+    <p>Entry Fee: only Saturday’s and Sunday’sTour </p>
+    <p>ADULT: Rs.3100</p>
+    <p>CHILD: Rs.2400</p>
+    <p>Inclusions: Entry Tickets, Tea & Snacks, A/c Transport, Tour Guide</p>
+    </div>
+    <h1>SECURITY GRAPH</h1>
+    <div class="graph">
+        
+    <canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+<script>
+var xValues = [2000,2002,2004,2008,2010,2012,2014,2016,2018,2020,2022];
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    }, { 
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script>
+
+    </div>
+    <div class="dot"></div><p class="d">No of Rapes</p><br>
+    <div class="dot1"></div><p class="d">No of Accidents</p><br>
+    <div class="dot2"></div><p class="d">No of Murders</p>
+    <h1>MAPS <i class='fas fa-map-marker-alt' style='font-size:48px;color:red'></i><h1>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15234.678753295851!2d78.4674647!3d17.3314792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3dbb0c22420002e!2sTaj%20Falaknuma%20Palace%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1672328838758!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+</body>
+</html>
